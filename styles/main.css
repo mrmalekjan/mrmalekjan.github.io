@@ -148,6 +148,29 @@ li{
     padding-left: 2em;
 }
 
+.card--work-history a{
+    color: var(--mainTextColor);
+    transition: 0.3s;
+}
+
+.card--work-history a:hover{
+    color: rgb(30, 190,214);
+    cursor: pointer;
+}
+
+.work-history-link {
+    color: var(--mainTextColor);
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    display: inline-block; /* Ensures proper spacing */
+}
+
+.work-history-link:hover {
+    color: rgb(30, 190, 214);
+    cursor: pointer;
+}
+
 .line-break{
     background-color: var(--mainBorderColor);
     height: 1px;
