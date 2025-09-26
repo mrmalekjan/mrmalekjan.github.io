@@ -7,13 +7,45 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/theme-switcher.css">
     </head>
     <body>
+        <div id="theme-switcher">
+            <div class="theme" id="theme-light" data-theme="light"></div>
+            <div class="theme" id="theme-dark" data-theme="dark"></div>
+        </div>
+        
         <div id="container--main">
             <a href="index.html">&#x2190; Go Back</a>
             <h1>Advanced Machine Learning Course Project</h1>
-            <p>EXPALANATION ABOUT MY PROJECT</p>
-            <p>...</p>
+            
+            <div class="section--page">
+                <p>As part of my MSc studies, I undertook a project in the Advanced Machine Learning course where I reproduced and implemented the research paper "An Attention-Based Deep Learning Approach for Sleep Stage Classification with Single-Channel EEG" (IEEE TNSRE, 2021) using Python and PyTorch.</p>
+                
+                <p>The goal of the project was to simulate the proposed AttnSleep model, an attention-based deep learning framework designed for automatic sleep stage classification from EEG signals.</p>
+                
+                <p>The implementation required building the full pipeline, including:</p>
+                
+                <ul>
+                    <li><strong>Multi-Resolution Convolutional Neural Network (MRCNN):</strong> to capture both low- and high-frequency features from raw EEG signals.</li>
+                    <li><strong>Adaptive Feature Recalibration (AFR):</strong> to enhance feature representation by modeling inter-dependencies between extracted features.</li>
+                    <li><strong>Temporal Context Encoder (TCE):</strong> to model temporal dependencies in sleep patterns using multi-head self-attention with causal convolutions.</li>
+                    <li><strong>Class-Aware Loss Function:</strong> to address class imbalance commonly present in physiological sleep datasets.</li>
+                </ul>
+                
+                <p>I trained and tested the model on publicly available EEG datasets (such as Sleep-EDF), evaluated its performance against baseline methods, and confirmed that the reproduced model achieved comparable results to the reported benchmarks.</p>
+                
+                <p>Through this project, I gained extensive hands-on experience with deep learning for time-series biosignals, attention mechanisms, and practical challenges such as imbalanced medical data, model optimization, and reproducibility of research code.</p>
+                
+                <p>This project strengthened my expertise in applying advanced deep learning architectures to healthcare-related signal processing problems and gave me practical insights into bridging theoretical research with implementation.</p>
+            </div>
+            
+            <div class="section--page">
+                <h2>AttnSleep Model</h2>
+                <img id="project-image" src="./assets/images/advanced_ML_project_attnsleep_mode.png" alt="AttnSleep Model Architecture">
+            </div>
         </div>
+        
+        <script src="js/theme-switcher.js"></script>
     </body>
 </html>

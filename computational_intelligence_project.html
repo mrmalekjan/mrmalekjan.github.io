@@ -3,17 +3,98 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>CI Course Project</title>
+        <title>Computational Intelligence Course Project</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/theme-switcher.css">
+        <style>
+            .image-row {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                margin: 1em 0;
+            }
+            
+            .image-container {
+                flex: 1;
+                min-width: 300px;
+            }
+            
+            .image-container img {
+                width: 100%;
+                height: auto;
+                border-radius: 5px;
+                border: 1px solid var(--mainBorderColor);
+            }
+            
+            .image-caption {
+                text-align: center;
+                font-style: italic;
+                margin-top: 0.5em;
+                color: var(--secondaryTextColor);
+                font-size: 0.9em;
+            }
+            
+            @media (max-width: 768px) {
+                .image-row {
+                    flex-direction: column;
+                }
+                
+                .image-container {
+                    min-width: 100%;
+                }
+            }
+        </style>
     </head>
     <body>
+        <div id="theme-switcher">
+            <div class="theme" id="theme-light" data-theme="light"></div>
+            <div class="theme" id="theme-dark" data-theme="dark"></div>
+        </div>
+        
         <div id="container--main">
             <a href="index.html">&#x2190; Go Back</a>
-            <h1>CI Course Project</h1>
-            <p>EXPALANATION ABOUT MY PROJECT</p>
-            <p>...</p>
+            
+            <div class="section--page">
+                <h1>Fuzzy Control of a Three-Link Gymnastic Robot</h1>
+                <p><strong>Computational Intelligence Course Project</strong></p>
+                
+                <div class="card--project">
+                    <p>As part of my Bachelor's degree course in Computational Intelligence, I designed and implemented a fuzzy logic controller for a three-link underactuated robotic system to perform a gymnastic "giant circle" maneuver.</p>
+                    
+                    <p>The project involved a comprehensive process, beginning with the dynamic modeling of the robot using Lagrangian mechanics to derive the governing equations of motion. The resulting nonlinear system was simulated in MATLAB/Simulink to validate the model.</p>
+                    
+                    <p>The core of the project was the design of a Mamdani-type fuzzy logic controller (FLC) to generate the control torques required for the swing motion. Two separate fuzzy inference systems (FIS) were developed, each taking the error and the derivative of error for a specific joint angle as inputs. The FISs utilized triangular membership functions, a set of empirically tuned fuzzy rules, and the centroid method for defuzzification.</p>
+
+                    <p>The simulation results successfully demonstrated that the designed fuzzy controller could effectively drive the robot to perform the continuous 360-degree giant circle motion. The control torques remained within the specified physical limits, and the graphical animation confirmed the desired kinematic behavior.</p>
+                </div>
+            </div>
+
+            <div class="section--page">
+                <h2>Project Implementation</h2>
+                
+                <div class="card--project">
+                    <h3>Closed-Loop Control System</h3>
+                    <img id="project-image" src="./assets/images/CI_project_closed_loop_system.png" alt="Closed-Loop Control System Architecture">
+                </div>
+
+                <div class="card--project">
+                    <h3>A Gymnast Robot Model</h3>
+                    <div class="image-row">
+                        <div class="image-container">
+                            <img src="./assets/images/CI_project_gymnast.png" alt="Gymnast Robot Model">
+                            <div class="image-caption">Gymnast Robot 2D Model</div>
+                        </div>
+                        <div class="image-container">
+                            <img src="./assets/images/CI_project_gymnast_mathemtical_model.png" alt="Mathematical Model Diagram">
+                            <div class="image-caption">Mathematical Model Diagram</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        
+        <script src="./js/theme-switcher.js"></script>
     </body>
 </html>
