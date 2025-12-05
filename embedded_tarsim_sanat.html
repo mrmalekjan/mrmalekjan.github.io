@@ -7,13 +7,79 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/theme-switcher.css">
     </head>
     <body>
+        <div id="theme-switcher">
+            <div class="theme" id="theme-light" data-theme="light"></div>
+            <div class="theme" id="theme-dark" data-theme="dark"></div>
+        </div>
+        
         <div id="container--main">
             <a href="index.html">&#x2190; Go Back</a>
             <h1>Tarsim Sanat</h1>
-            <p>EXPALANATION ABOUT MY PROJECT</p>
-            <p>...</p>
+            <div class="section--page">
+                <p><strong>Company:</strong> Tarsim Sanat Hooshmand</p>
+                <p><strong>Responsibilities:</strong> Embedded Systems Developer</p>
+                <p><strong>Start Date:</strong> November 2024</p>
+                <p><strong>End Date:</strong> -- --</p>
+
+                <h2>Overview</h2>
+                
+                <p>I started my work at TSH as an embedded system developer.</p>
+                
+                <h2>Technologies Used</h2>
+
+                <li>ARM Based Microcontrollers: STM32, WCH, ESP8266...</li>
+                <li>Frontend Framework: Node.js</li>
+                <li>Backend Framework: ASP.Net</li>
+                <li>Version Control: Git</li>
+
+                <h2>Projects History</h2>
+                
+                <h3>1. SiVo</h3>
+                <p>Elevator speaker system that can play music, announce floors, and connect directly to the elevator phone.
+                    Embedded Systems: WCH/ST microcontrollers and Raspberry ICs.
+                    Peripherals: UART, SPI, GPIO, TIMER, EXTI
+                    Operating System: Free-RTOS
+                </p>
+                <h3>2. SiAx</h3>
+                <p>
+                    Elevator access control system using RFID technology and announcing floors and people authorized to access, with direct connection to the Sidex system
+                    Embedded Systems: WCH/ST microcontrollers and Raspberry ICs.
+                    Peripherals: UART, GPIO, TIMER, EXTI, I2C, SPI
+                    Operating System: Free-RTOS
+                </p>
+                <h3>3. Sidex</h3>
+                <p>
+                    Main part of the access control system, consisting of GSM communication, SD card, OLED display, Speaker, Rotary Switch and Push Buttons, Ethernet connections, Different Power up modes (In plug and battery operated) and most important,
+                     5 powerful and various microcontrollers that work in coordination. 
+                    Embedded Systems: WCH/ST/ESP microcontrollers.
+                    Peripherals: USART, UART, GPIO, TIMER, EXTI, I2C, SPI, CAN, ADC, DAC
+                    Operating System: Free-RTOS 
+                </p>
+                <h3>4. Destination Control System Simulator</h3>
+                <p>
+                    A graphical interface made using Node.js that connects to verify Sidex performance and check sample data logs through it and also to make random datas for training destination system AI algorithms
+                </p>
+                <h3>5. SiTel Echo+</h3>
+                <p>
+                    A touch-screen telephone that can connect to the telephone network as well as communicate directly with the SiAx system.
+                    Embedded Systems: WCH/ST microcontrollers.
+                    Peripherals: UART, GPIO, TIMER, EXTI, I2C, ADC
+                    Operating System: Free-RTOS 
+                </p>
+                <h3>6. SiHall</h3>
+                <p>
+                    System connecting the elevator panel to the Sidex system via stable and secure CAN or ModBus communication
+                    Embedded Systems: WCH/ST microcontrollers.
+                    Peripherals: CAN, UART, GPIO, TIMER, EXTI, I2C, DAC
+                    Operating System: Free-RTOS
+                </p>
+            </div>
         </div>
+
+        <script src="js/theme-switcher.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     </body>
 </html>
