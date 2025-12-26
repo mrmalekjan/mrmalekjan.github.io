@@ -1,15 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
-@import url('./theme-switcher.css');
 
 :root{
-    --mainTextColor-light:#000;
-    --secondaryTextColor-light:rgb(51 51 51);
-    --mainLinkColor-light:#0da2b8;
-    --mainBorderColor-light:rgb(218, 218, 218);
-    --mainBgColor-light:rgb(249, 250,251);
-}
-
-[data-theme="dark"]{
     --mainTextColor:#fff;
     --secondaryTextColor:#adb0b1;
     --mainLinkColor:rgb(30, 190,214);
@@ -113,6 +104,27 @@ li{
     flex-wrap: wrap;
     gap: 1em;
     font-size: 0.9em;
+}
+
+/* Education Section Styles */
+.card--education {
+    margin-bottom: 2em;
+    padding-left: 1em;
+    border-left: 2px solid var(--mainLinkColor);
+}
+
+.card--education h3 {
+    margin-bottom: 0.5em;
+    color: var(--mainTextColor);
+}
+
+.card--education p {
+    margin-bottom: 0.3em;
+    line-height: 1.4em;
+}
+
+.card--education strong {
+    color: var(--mainTextColor);
 }
 
 .card--techstack{
