@@ -1,136 +1,124 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>BSc Project - Smart AC Lamp Dimmer</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./styles/main.css">
 
-    </head>
-    <body>
-        
-        <div id="container--main">
-            <a href="index.html">&#x2190; Go Back</a>
-            <h1>BSc Final Project: Smart AC Lamp Dimmer with Closed-Loop PID Control in IoT Framework</h1>
-            
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BSc Project - Smart AC Lamp Dimmer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/main.css">
+
+</head>
+
+<body>
+
+    <div id="container--main">
+        <a href="index.html">&#x2190; Go Back</a>
+        <h1>BSc Final Project: Smart AC Lamp Dimmer with Closed-Loop PID Control in IoT Framework</h1>
+
+        <div class="section--page">
+            <p><strong>University:</strong> Amirkabir University of Technology (Tehran Polytechnic)</p>
+            <p><strong>Field:</strong> Electrical Engineering - Control Systems</p>
+            <p><strong>Supervisor:</strong> Dr. Hajar Atrianfar</p>
+            <p><strong>Completion Date:</strong> September 2021</p>
+
+            <h2>Project Overview</h2>
+
+            <p>My Bachelor's degree project involved designing and implementing a smart AC lamp dimmer with closed-loop
+                PID control operating within an Internet of Things (IoT) framework. The system enables remote wireless
+                control of lamp brightness through internet connectivity or remote control, while maintaining precise
+                light intensity regulation using PID control with Ziegler-Nichols tuning.</p>
+
+            <h2>Key Technical Components</h2>
+
+            <ul>
+                <li><strong>AC Dimmer Circuit:</strong> Designed using TRIAC with leading-edge dimming technique</li>
+                <li><strong>Zero Cross Detection:</strong> Implemented for precise phase control timing</li>
+                <li><strong>Light Sensing:</strong> BH1750 digital light sensor for accurate lux measurement</li>
+                <li><strong>Microcontroller:</strong> NodeMCU (ESP8266) for processing and Wi-Fi connectivity</li>
+                <li><strong>Control Algorithm:</strong> PID controller with Ziegler-Nichols tuning method</li>
+                <li><strong>IoT Integration:</strong> Thinger.io platform for remote monitoring and control</li>
+                <li><strong>Mobile Application:</strong> Android app for user interface and setpoint adjustment</li>
+            </ul>
+
+            <h2>Technical Implementation</h2>
+
+            <h3>Hardware Design</h3>
+            <ul>
+                <li>Zero Cross Detector circuit for accurate AC waveform detection</li>
+                <li>TRIAC-based dimming circuit with optoisolator for safety</li>
+                <li>BH1750 light sensor with I2C interface for precise light measurement</li>
+                <li>NodeMCU ESP8266 for processing and Wi-Fi connectivity</li>
+            </ul>
+
+            <h3>Control System Design</h3>
+            <ul>
+                <li>System identification using step response analysis</li>
+                <li>First and second-order system approximations with time delay</li>
+                <li>PID controller design using Ziegler-Nichols methods (both step response and frequency response)</li>
+                <li>Manual PID tuning for optimal performance</li>
+                <li>Implementation of anti-windup protection</li>
+            </ul>
+
+            <h3>Software Development</h3>
+            <ul>
+                <li>Embedded C++ programming for NodeMCU</li>
+                <li>Interrupt-driven zero cross detection</li>
+                <li>Digital PID controller implementation using MATLAB</li>
+                <li>IoT integration with Thinger.io platform</li>
+                <li>Android mobile application for remote control</li>
+            </ul>
+
+            <h2>Key Achievements</h2>
+
+            <ul>
+                <li>Successfully designed and implemented a closed-loop control system for precise light intensity
+                    regulation</li>
+                <li>Achieved stable system response with zero steady-state error and settling time under 2 seconds</li>
+                <li>Implemented effective anti-windup protection to prevent integrator saturation</li>
+                <li>Developed complete IoT integration allowing remote monitoring and control</li>
+                <li>Created a user-friendly Android application for seamless interaction with the system</li>
+                <li>Successfully compared different PID tuning methods and selected optimal parameters</li>
+            </ul>
+
+            <h2>Technical Specifications</h2>
+
+            <ul>
+                <li><strong>Light Measurement Range:</strong> 1-65,535 lux</li>
+                <li><strong>Measurement Accuracy:</strong> 0.11 lux</li>
+                <li><strong>Control Frequency:</strong> 20 Hz sampling rate</li>
+                <li><strong>Communication:</strong> Wi-Fi (HTTP protocol)</li>
+                <li><strong>Dimming Method:</strong> Leading-edge phase control</li>
+                <li><strong>Microcontroller:</strong> NodeMCU ESP8266</li>
+                <li><strong>Sensor Interface:</strong> I2C protocol</li>
+            </ul>
+
+            <h2>Skills Demonstrated</h2>
+
+            <ul>
+                <li>Circuit design and analysis</li>
+                <li>System identification and modeling</li>
+                <li>PID controller design and tuning</li>
+                <li>Embedded systems programming</li>
+                <li>IoT architecture and implementation</li>
+                <li>Mobile application development</li>
+                <li>Hardware-software integration</li>
+                <li>Control system validation and testing</li>
+            </ul>
+
             <div class="section--page">
-                <p><strong>University:</strong> Amirkabir University of Technology (Tehran Polytechnic)</p>
-                <p><strong>Field:</strong> Electrical Engineering - Control Systems</p>
-                <p><strong>Supervisor:</strong> Dr. Hajar Atrianfar</p>
-                <p><strong>Completion Date:</strong> September 2021</p>
-                
-                <h2>Project Overview</h2>
-                
-                <p>This Bachelor's degree project involved designing and implementing a smart AC lamp dimmer with closed-loop PID control operating within an Internet of Things (IoT) framework. The system enables remote wireless control of lamp brightness through internet connectivity or remote control, while maintaining precise light intensity regulation using PID control with Ziegler-Nichols tuning.</p>
-                
-                <h2>Key Technical Components</h2>
-                
-                <ul>
-                    <li><strong>AC Dimmer Circuit:</strong> Designed using TRIAC with leading-edge dimming technique</li>
-                    <li><strong>Zero Cross Detection:</strong> Implemented for precise phase control timing</li>
-                    <li><strong>Light Sensing:</strong> BH1750 digital light sensor for accurate lux measurement</li>
-                    <li><strong>Microcontroller:</strong> NodeMCU (ESP8266) for processing and Wi-Fi connectivity</li>
-                    <li><strong>Control Algorithm:</strong> PID controller with Ziegler-Nichols tuning method</li>
-                    <li><strong>IoT Integration:</strong> Thinger.io platform for remote monitoring and control</li>
-                    <li><strong>Mobile Application:</strong> Android app for user interface and setpoint adjustment</li>
-                </ul>
-                
-                <h2>Technical Implementation</h2>
-                
-                <h3>Hardware Design</h3>
-                <ul>
-                    <li>Zero Cross Detector circuit for accurate AC waveform detection</li>
-                    <li>TRIAC-based dimming circuit with optoisolator for safety</li>
-                    <li>BH1750 light sensor with I2C interface for precise light measurement</li>
-                    <li>NodeMCU ESP8266 for processing and Wi-Fi connectivity</li>
-                </ul>
-                
-                <h3>Control System Design</h3>
-                <ul>
-                    <li>System identification using step response analysis</li>
-                    <li>First and second-order system approximations with time delay</li>
-                    <li>PID controller design using Ziegler-Nichols methods (both step response and frequency response)</li>
-                    <li>Manual PID tuning for optimal performance</li>
-                    <li>Implementation of anti-windup protection</li>
-                </ul>
-                
-                <h3>Software Development</h3>
-                <ul>
-                    <li>Embedded C++ programming for NodeMCU</li>
-                    <li>Interrupt-driven zero cross detection</li>
-                    <li>Digital PID controller implementation</li>
-                    <li>IoT integration with Thinger.io platform</li>
-                    <li>Android mobile application for remote control</li>
-                </ul>
-                
-                <h2>System Architecture</h2>
-                
-                <p>The project implemented a comprehensive IoT architecture with the following layers:</p>
-                
-                <ul>
-                    <li><strong>Object Layer:</strong> Physical hardware including lamp, dimmer circuit, and sensors</li>
-                    <li><strong>Object Abstraction Layer:</strong> Communication protocols (Wi-Fi, I2C)</li>
-                    <li><strong>Service Management Layer:</strong> Data processing and network communication</li>
-                    <li><strong>Application Layer:</strong> Mobile application and web interface</li>
-                    <li><strong>Business Layer:</strong> Data analysis and user interaction</li>
-                </ul>
-                
-                <h2>Key Achievements</h2>
-                
-                <ul>
-                    <li>Successfully designed and implemented a closed-loop control system for precise light intensity regulation</li>
-                    <li>Achieved stable system response with zero steady-state error and settling time under 2 seconds</li>
-                    <li>Implemented effective anti-windup protection to prevent integrator saturation</li>
-                    <li>Developed complete IoT integration allowing remote monitoring and control</li>
-                    <li>Created a user-friendly Android application for seamless interaction with the system</li>
-                    <li>Successfully compared different PID tuning methods and selected optimal parameters</li>
-                </ul>
-                
-                <h2>Technical Specifications</h2>
-                
-                <ul>
-                    <li><strong>Light Measurement Range:</strong> 1-65,535 lux</li>
-                    <li><strong>Measurement Accuracy:</strong> 0.11 lux</li>
-                    <li><strong>Control Frequency:</strong> 20 Hz sampling rate</li>
-                    <li><strong>Communication:</strong> Wi-Fi (HTTP protocol)</li>
-                    <li><strong>Dimming Method:</strong> Leading-edge phase control</li>
-                    <li><strong>Microcontroller:</strong> NodeMCU ESP8266</li>
-                    <li><strong>Sensor Interface:</strong> I2C protocol</li>
-                </ul>
-                
-                <h2>Project Significance</h2>
-                
-                <p>This project demonstrated the practical application of control theory in real-world IoT systems. It combined traditional control engineering with modern IoT technologies, showcasing how classical control methods (PID with Ziegler-Nichols tuning) can be effectively implemented in smart home applications. The system provides energy-efficient lighting control while maintaining user comfort and convenience through remote accessibility.</p>
-                
-                <p>The project also highlighted the importance of proper system identification, controller design, and practical implementation considerations such as anti-windup protection and sampling rate selection.</p>
-                
-                <h2>Skills Demonstrated</h2>
-                
-                <ul>
-                    <li>Circuit design and analysis</li>
-                    <li>System identification and modeling</li>
-                    <li>PID controller design and tuning</li>
-                    <li>Embedded systems programming</li>
-                    <li>IoT architecture and implementation</li>
-                    <li>Mobile application development</li>
-                    <li>Hardware-software integration</li>
-                    <li>Control system validation and testing</li>
-                </ul>
-                
-                <div class="section--page">
-                    <h2>Project Documentation</h2>
-                    <p>
-                        <a href="./assets/files/final_BSc_project_abs_ind.pdf" target="_blank">
-                            <i class="fas fa-file-pdf"></i> Download Project Abstract (PDF)
-                        </a>
-                    </p>
-                </div>
+                <h2>Project Documentations</h2>
+                <p>
+                    <a href="./assets/files/final_BSc_project_abs_ind.pdf" target="_blank">
+                        <i class="fas fa-file-pdf"></i> Download Project Abstract (PDF)
+                    </a>
+                </p>
             </div>
         </div>
-        
+    </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</body>
+
 </html>
