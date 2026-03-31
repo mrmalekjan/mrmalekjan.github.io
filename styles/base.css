@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --mainTextColor: #ececec;
+    --secondaryTextColor: #adb0b1;
+    --mainLinkColor: rgb(30, 190, 214);
+    --mainBorderColor: #2b3031;
+    --mainBgColor: #131415;
+}
+
+:root.light {
+    --mainTextColor: #1a1a1a;
+    --secondaryTextColor: #555555;
+    --mainLinkColor: rgb(30, 190, 214);
+    --mainBorderColor: #e0e0e0;
+    --mainBgColor: #ffffff;
+}
+
+* {
+    font-family: 'Readex Pro';
+    line-height: 1.5em;
+    box-sizing: border-box;
+    color: var(--mainTextColor);
+}
+
+body {
+    background-color: var(--mainBgColor);
+}
