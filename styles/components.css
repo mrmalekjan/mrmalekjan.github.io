@@ -125,6 +125,38 @@
     opacity: 0.92;
 }
 
+.work-history-stacks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-top: 0.85em;
+    max-width: 42em;
+}
+
+.work-history-stack-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+    font-size: 0.78em;
+    font-weight: 400;
+    color: var(--secondaryTextColor);
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 4px;
+    padding: 0.25em 0.55em;
+    line-height: 1.3;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.work-history-stack-tag i {
+    font-size: 1.05em;
+    line-height: 1;
+}
+
+.work-history-stack-tag:hover {
+    color: var(--mainLinkColor);
+    border-color: var(--mainLinkColor);
+}
+
 .line-break {
     background-color: var(--mainBorderColor);
     height: 1px;
