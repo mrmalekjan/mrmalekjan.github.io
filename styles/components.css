@@ -98,7 +98,7 @@
 }
 
 .card--work-history a:hover,
-.work-history-link:hover {
+.work-history-link a:hover {
     color: var(--mainLinkColor);
     cursor: pointer;
 }
