@@ -111,6 +111,20 @@
     display: inline-block;
 }
 
+.card--work-history .work-history-period {
+    margin: 0.35em 0 0.5em;
+    font-size: 0.9em;
+    color: var(--secondaryTextColor);
+}
+
+.card--work-history .work-history-summary {
+    margin: 0;
+    line-height: 1.5em;
+    max-width: 42em;
+    color: var(--mainTextColor);
+    opacity: 0.92;
+}
+
 .line-break {
     background-color: var(--mainBorderColor);
     height: 1px;
