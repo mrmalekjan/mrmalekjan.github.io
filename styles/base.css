@@ -12,14 +12,6 @@ html {
     --mainBgColor: #131415;
 }
 
-:root.light {
-    --mainTextColor: #1a1a1a;
-    --secondaryTextColor: #555555;
-    --mainLinkColor: rgb(30, 190, 214);
-    --mainBorderColor: #e0e0e0;
-    --mainBgColor: #ffffff;
-}
-
 * {
     font-family: 'Readex Pro';
     line-height: 1.5em;

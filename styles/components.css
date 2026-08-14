@@ -6,13 +6,6 @@
     list-style: none;
 }
 
-.highlight-box {
-    background-color: var(--mainBgColor);
-    border-left: 4px solid var(--mainLinkColor);
-    padding: 1em;
-    margin: 1em 0;
-}
-
 #user-name {
     font-size: 48px;
     line-height: 1em;
@@ -97,8 +90,7 @@
     transition: 0.3s;
 }
 
-.card--work-history a:hover,
-.work-history-link a:hover {
+.card--work-history a:hover {
     color: var(--mainLinkColor);
     cursor: pointer;
 }
@@ -160,13 +152,6 @@
 .line-break {
     background-color: var(--mainBorderColor);
     height: 1px;
-}
-
-.image-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    border: 1px solid var(--mainBorderColor);
 }
 
 @media(max-width:600px) {

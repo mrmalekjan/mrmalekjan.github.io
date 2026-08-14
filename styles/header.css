@@ -9,11 +9,3 @@
 .back-link:hover {
     color: var(--mainLinkColor);
 }
-
-.theme-toggle-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1.4rem;
-    padding: 0.25rem 0.5rem;
-}
