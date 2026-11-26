@@ -1,208 +1,293 @@
-<!DOCTYPE html>
-<html>
-
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mohammadreza Malekjan</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./styles/base.css">
-    <link rel="stylesheet" href="./styles/elements.css">
-    <link rel="stylesheet" href="./styles/layout.css">
-    <link rel="stylesheet" href="./styles/components.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Mohammadreza Malekjan — Control & Machine Learning Engineer. Portfolio covering embedded systems, PLC, AI/ML, control engineering, and web development." />
+  <meta name="author" content="Mohammadreza Malekjan" />
+  <meta name="theme-color" content="#090a0b" />
+
+  <meta property="og:title" content="Mohammadreza Malekjan | Control & ML Engineer" />
+  <meta property="og:description" content="Control & Machine Learning Engineer portfolio — embedded systems, PLC, AI/ML, and web development." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mrmalekjan.github.io/" />
+  <meta property="og:image" content="https://mrmalekjan.github.io/assets/images/profile_pic.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:creator" content="@mrmalekjan" />
+
+  <link rel="canonical" href="https://mrmalekjan.github.io/" />
+  <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="./assets/images/apple-touch-icon.png" />
+  <link rel="manifest" href="./site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+  <link rel="stylesheet" href="./styles/main.css" />
+
+  <title>Mohammadreza Malekjan | Control & ML Engineer</title>
 </head>
-
 <body>
-    <div id="container--main">
+  <a href="#main-content" class="skip-link">Skip to content</a>
 
-        <section id="wrapper--hero" class="section--page">
-            <img id="profile-pic" src="./assets/images/profile_pic.jpg">
-            <div>
-                <h1 id="user-name">Mohammadreza Malekjan</h1>
-                <p id="bio">Innovative Control & Machine Learning Engineer with a proven track record of
-                    designing and implementing robust control systems to optimize processes and enhance
-                    efficiency across diverse industries. Proficient in developing and deploying AI models
-                    and algorithms to tackle diverse challenges across industries. Skilled in MATLAB and Python
-                    using TensorFlow and PyTorch, with a focus on optimizing performance and scalability.
-                    I am also skilled in PLC programming, HMI development, robust linear and nonlinear controller
-                    design using classical methods alongside AI techniques</p>
-                <p id="email">👉 malak1377mm@gmail.com</p>
-                <p id="phonenumber">👉 +989197674587</p>
+  <header class="site-header" id="site-header">
+    <nav class="container nav">
+      <a href="#" class="logo" aria-label="Home">MM<span>.</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section id="home" class="section hero reveal reveal-delay-1" aria-labelledby="home-heading">
+      <div class="container grid hero-grid">
+        <div class="hero-content">
+          <div class="badge">Control & Machine Learning Engineer</div>
+          <h1 id="home-heading">Mohammadreza <span class="highlight">Malekjan</span></h1>
+          <p class="lead" id="typing-target" aria-live="polite"></p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+            <a href="#projects" class="btn btn-outline">View Projects</a>
+          </div>
+          <div class="hero-meta">
+            <a href="mailto:malak1377mm@gmail.com" class="contact-chip"><i class="fa-regular fa-envelope"></i><span>malak1377mm@gmail.com</span></a>
+            <a href="tel:+989197674587" class="contact-chip"><i class="fa-regular fa-phone"></i><span>+98 919 767 4587</span></a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="./assets/images/profile_pic.jpg" alt="Mohammadreza Malekjan" class="profile-pic reveal reveal-delay-2" loading="lazy" decoding="async" width="400" height="400" />
+        </div>
+      </div>
+    </section>
+
+    <section id="socials" class="section socials reveal reveal-delay-3" aria-label="Social profiles">
+      <div class="container">
+        <ul class="social-list">
+          <li><a href="https://github.com/mrmalekjan" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i><span class="visually-hidden">GitHub</span></a></li>
+          <li><a href="https://www.linkedin.com/in/mohammadreza-malekjan-5878b1244/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i><span class="visually-hidden">LinkedIn</span></a></li>
+          <li><a href="https://t.me/mohammadrezamalekjan" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="fab fa-telegram"></i><span class="visually-hidden">Telegram</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal reveal-delay-1" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 class="section-title" id="skills-heading"><i class="fa-solid fa-layer-group"></i> Skills & Qualifications</h2>
+        <ul class="qualifications-list">
+          <li><span>✔</span> Android Programming (Java)</li>
+          <li><span>✔</span> PLC Programming (Ladder)</li>
+          <li><span>✔</span> Controller Design & System Identification (MATLAB & Python)</li>
+          <li><span>✔</span> HTML, CSS & JavaScript</li>
+          <li><span>✔</span> Deep Learning (Python: TensorFlow & PyTorch)</li>
+          <li><span>✔</span> ARM & AVR Microcontroller Programming (C & C++)</li>
+          <li><span>✔</span> Web Application Development (Python/Flask & Node.js)</li>
+          <li><span>✔</span> Git Version Control</li>
+          <li><span>✔</span> Altium Designer</li>
+        </ul>
+      </div>
+    </section>
+    <section id="techstack" class="section reveal reveal-delay-2" aria-labelledby="tech-heading">
+      <div class="container">
+        <h2 class="section-title" id="tech-heading"><i class="fa-solid fa-microchip"></i> Tech Stack</h2>
+        <div class="tech-grid">
+          <a href="#" class="tech-card reveal reveal-delay-1"><i class="devicon-matlab-plain colored"></i><span>MATLAB</span></a>
+          <a href="#" class="tech-card reveal reveal-delay-1"><i class="fas fa-microchip"></i><span>ARM</span></a>
+          <a href="#" class="tech-card reveal reveal-delay-1"><i class="fas fa-server"></i><span>ASP.NET</span></a>
+          <a href="#" class="tech-card reveal reveal-delay-1"><i class="fab fa-python"></i><span>Python</span></a>
+          <a href="#" class="tech-card reveal reveal-delay-1"><i class="fab fa-android"></i><span>Android Studio</span></a>
+          <a href="#" class="tech-card reveal reveal-delay-1"><i class="fab fa-node-js"></i><span>Node.js</span></a>
+          <a href="#" class="tech-card reveal reveal-delay-1"><i class="fab fa-git-alt"></i><span>Git</span></a>
+          <a href="#" class="tech-card reveal reveal-delay-1"><i class="devicon-react-original"></i><span>React</span></a>
+          <a href="#" class="tech-card reveal reveal-delay-1"><i class="devicon-dot-net-plain"></i><span>.NET</span></a>
+          <a href="#" class="tech-card reveal reveal-delay-1"><i class="devicon-tensorflow-original"></i><span>TensorFlow</span></a>
+          <a href="#" class="tech-card reveal reveal-delay-1"><i class="devicon-pytorch-original"></i><span>PyTorch</span></a>
+          <a href="#" class="tech-card reveal reveal-delay-1"><i class="fab fa-linux"></i><span>Linux</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section reveal reveal-delay-3" aria-labelledby="experience-heading">
+      <div class="container">
+        <h2 class="section-title" id="experience-heading"><i class="fa-solid fa-briefcase"></i> Work Experience</h2>
+        <div class="timeline">
+          <article class="timeline-item reveal reveal-delay-1">
+            <div class="timeline-content">
+              <h3>Embedded Software Engineer</h3>
+              <p class="meta"><span class="company">Tarsim Sanat Hooshmand</span> <span class="dot"></span> <time>11/2024 – 09/2026</time></p>
+              <p>Develop elevator and IoT products on ARM MCUs (STM32, WCH, ESP8266) with FreeRTOS, plus supporting React and ASP.NET tooling.</p>
+              <div class="stack-tags">
+                <span class="stack-tag"><i class="fas fa-microchip"></i> STM32</span>
+                <span class="stack-tag">FreeRTOS</span>
+                <span class="stack-tag">C / C++</span>
+                <span class="stack-tag"><i class="devicon-react-original"></i> React</span>
+                <span class="stack-tag"><i class="devicon-dot-net-plain"></i> ASP.NET</span>
+                <span class="stack-tag"><i class="fab fa-git-alt"></i> Git</span>
+              </div>
             </div>
-        </section>
+          </article>
 
-        <section class="section--page">
-            <div id="socials--list">
-                <a href="https://github.com/mrmalekjan" target="_blank">
-                    <i class="fab fa-github"></i> Github
-                </a>
-                <a href="https://www.linkedin.com/in/mohammadreza-malekjan-5878b1244/" target="_blank">
-                    <i class="fab fa-linkedin"></i> Linkedin
-                </a>
-                <a href="https://t.me/mohammadrezamalekjan" target="_blank">
-                    <i class="fab fa-telegram"></i> Telegram
-                </a>
+          <article class="timeline-item reveal reveal-delay-2">
+            <div class="timeline-content">
+              <h3>Backend Software Developer</h3>
+              <p class="meta"><span class="company">Goldis Co.</span> <span class="dot"></span> <time>06/2024 – 09/2024</time></p>
+              <p>Built a Flask post-management prototype with REST APIs, SQLite, and a responsive HTML/CSS/JavaScript front end.</p>
+              <div class="stack-tags">
+                <span class="stack-tag"><i class="devicon-python-plain colored"></i> Python</span>
+                <span class="stack-tag"><i class="devicon-flask-original"></i> Flask</span>
+                <span class="stack-tag">SQLite</span>
+                <span class="stack-tag"><i class="devicon-html5-plain"></i> HTML</span>
+                <span class="stack-tag"><i class="devicon-css3-plain"></i> CSS</span>
+                <span class="stack-tag"><i class="devicon-javascript-plain"></i> JavaScript</span>
+                <span class="stack-tag"><i class="fab fa-git-alt"></i> Git</span>
+              </div>
             </div>
-        </section>
+          </article>
 
-        <section class="section--page">
-            <h2>Skills & Qualifications</h2>
-            <ul id="qualifications--list">
-                <li>✔️ Android Programming (Java)</li>
-                <li>✔️ PLC Progrmming (Ladder)</li>
-                <li>✔️ Controller Design and System Identification (MATLAB & Python)</li>
-                <li>✔️ HTML CSS jQuery</li>
-                <li>✔️ Deep Learning (Python: TensorFlow & Pytorch)</li>
-                <li>✔️ ARM and AVR Based Microcontroller Programming (C & C++)</li>
-                <li>✔️ Web Application Development (Python(Flask) & Node.js)</li>
-                <li>✔️ Git Version Control</li>
-                <li>✔️ Altium Designer</li>
-            </ul>
-        </section>
-
-        <section class="section--page">
-            <h2>Educational Degrees</h2>
-            <div class="card--education">
-                <h3>M.Sc. in Electrical-Control Engineering</h3>
-                <p><strong>University:</strong> Amirkabir University of Technology</p>
-                <p><strong>Duration:</strong> 2021 - 2024</p>
-                <p><strong>GPA:</strong> 15.84/20 (3.44/4.0)</p>
-                <p><strong>Thesis:</strong> Robust MIMO secondary frequency modeling and control of Shahid Rajaei
-                    combined cycle power plant using classic and deep learning methods</p>
+          <article class="timeline-item reveal reveal-delay-3">
+            <div class="timeline-content">
+              <h3>AI Papers Annotator</h3>
+              <p class="meta"><span class="company">Independent Research</span> <span class="dot"></span> <time>12/2021 – 05/2022</time></p>
+              <p>Annotated 300+ AI research papers to build structured NLP knowledge graphs—entities, methods, and relationships from top venues such as NeurIPS and ICML.</p>
+              <div class="stack-tags">
+                <span class="stack-tag">NLP</span>
+                <span class="stack-tag">Knowledge Graphs</span>
+                <span class="stack-tag">Research Annotation</span>
+              </div>
             </div>
+          </article>
 
-            <div class="line-break"></div>
-
-            <div class="card--education">
-                <h3>B.Sc. in Electrical-Control Engineering</h3>
-                <p><strong>University:</strong> Amirkabir University of Technology</p>
-                <p><strong>Duration:</strong> 2017 - 2021</p>
-                <p><strong>GPA:</strong> 15.28/20 (3.06/4.0)</p>
-                <p><strong>Project:</strong> Android application, PI controller design and identification of lighting
-                    system of smart homes</p>
+          <article class="timeline-item reveal reveal-delay-1">
+            <div class="timeline-content">
+              <h3>PLC and HMI Software Developer</h3>
+              <p class="meta"><span class="company">Industrial Automation Internship</span> <span class="dot"></span> <time>05/2020 – 10/2020</time></p>
+              <p>Programmed Siemens S7 and Kinco PLCs and HMIs with TIA Portal and KincoBuilder, including ladder logic and simulation.</p>
+              <div class="stack-tags">
+                <span class="stack-tag">Siemens S7</span>
+                <span class="stack-tag">TIA Portal</span>
+                <span class="stack-tag">KincoBuilder</span>
+                <span class="stack-tag">Ladder Logic</span>
+                <span class="stack-tag">HMI</span>
+              </div>
             </div>
-        </section>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <section class="section--page">
-            <h2>Tech Stack</h2>
-            <div id="wrapper--techstack__items">
-                <div class="card--techstack">
-                    <i class="devicon-matlab-plain"></i>
-                    <span>MATLAB</span>
-                </div>
-                <div class="card--techstack">
-                    <i class="fas fa-microchip"></i>
-                    <span>ARM</span>
-                </div>
-                <div class="card--techstack">
-                    <i class="fas fa-server"></i>
-                    <span>ASP.Net</span>
-                </div>
-                <div class="card--techstack">
-                    <i class="fab fa-python"></i>
-                    <span>Python</span>
-                </div>
-                <div class="card--techstack">
-                    <i class="fab fa-android"></i>
-                    <span>Android Studio</span>
-                </div>
-                <div class="card--techstack">
-                    <i class="fab fa-node-js"></i>
-                    <span>Node.js</span>
-                </div>
-                <div class="card--techstack">
-                    <i class="fab fa-git-alt"></i>
-                    <span>Git</span>
-                </div>
+    <section id="education" class="section reveal reveal-delay-1" aria-labelledby="education-heading">
+      <div class="container">
+        <h2 class="section-title" id="education-heading"><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+        <div class="edu-grid">
+          <div class="edu-card reveal reveal-delay-1">
+            <h3>M.Sc. in Electrical-Control Engineering</h3>
+            <p><strong>University:</strong> Amirkabir University of Technology (Tehran Polytechnic)</p>
+            <p><strong>Duration:</strong> 2021 – 2024</p>
+            <p><strong>GPA:</strong> 15.84 / 20 (3.44 / 4.0)</p>
+            <p><strong>Thesis:</strong> Robust MIMO secondary frequency modeling and control of Shahid Rajaei combined cycle power plant using classic and deep learning methods</p>
+          </div>
+          <div class="edu-card reveal reveal-delay-2">
+            <h3>B.Sc. in Electrical-Control Engineering</h3>
+            <p><strong>University:</strong> Amirkabir University of Technology (Tehran Polytechnic)</p>
+            <p><strong>Duration:</strong> 2017 – 2021</p>
+            <p><strong>GPA:</strong> 15.28 / 20 (3.06 / 4.0)</p>
+            <p><strong>Project:</strong> Android application, PI controller design and identification of lighting system of smart homes</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal reveal-delay-2" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 class="section-title" id="projects-heading"><i class="fa-solid fa-award"></i> Featured Projects</h2>
+        <div class="project-grid">
+          <article class="project-card reveal reveal-delay-1">
+            <h3>Robust MIMO secondary frequency modeling and control</h3>
+            <p>M.Sc. thesis on Shahid Rajaei combined cycle power plant using classic and deep learning methods.</p>
+            <a href="MSc_thesis.html" class="card-link">View thesis <span class="arrow">→</span></a>
+          </article>
+          <article class="project-card reveal reveal-delay-2">
+            <h3>Smart AC Lamp Dimmer with Closed-Loop PID Control</h3>
+            <p>B.Sc. final project — IoT framework, TRIAC dimming, PID control with Ziegler-Nichols tuning, NodeMCU ESP8266, and Android app.</p>
+            <a href="BSc_project.html" class="card-link">View project <span class="arrow">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section contact reveal reveal-delay-3" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 class="section-title" id="contact-heading"><i class="fa-solid fa-envelope"></i> Get in Touch</h2>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h3>Let's work together</h3>
+            <p>Open to opportunities in control engineering, embedded systems, and machine learning. Feel free to reach out via any channel below.</p>
+            <div class="contact-methods">
+              <a href="mailto:malak1377mm@gmail.com" class="contact-method"><i class="fa-regular fa-envelope"></i><div><strong>Email</strong><span>malak1377mm@gmail.com</span></div></a>
+              <a href="tel:+989197674587" class="contact-method"><i class="fa-regular fa-phone"></i><div><strong>Phone</strong><span>+98 919 767 4587</span></div></a>
+              <a href="https://linkedin.com/in/mohammadreza-malekjan-5878b1244/" target="_blank" rel="noopener noreferrer" class="contact-method"><i class="fab fa-linkedin"></i><div><strong>LinkedIn</strong><span>mohammadreza-malekjan</span></div></a>
+              <a href="https://github.com/mrmalekjan" target="_blank" rel="noopener noreferrer" class="contact-method"><i class="fab fa-github"></i><div><strong>GitHub</strong><span>mrmalekjan</span></div></a>
+              <a href="https://t.me/mohammadrezamalekjan" target="_blank" rel="noopener noreferrer" class="contact-method"><i class="fab fa-telegram"></i><div><strong>Telegram</strong><span>mohammadrezamalekjan</span></div></a>
             </div>
-        </section>
+          </div>
+          <form class="contact-form" novalidate>
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" name="name" placeholder="Your name" required />
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" name="email" placeholder="you@example.com" required />
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-msg"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        <section id="work-history-wrapper" class="section--page">
-            <h2>Work History</h2>
-
-            <div class="card--work-history">
-                <p class="work-history-link">🚧 PLC and HMI Software Developer</p>
-                <p class="work-history-period">05/2020 - 10/2020</p>
-                <p class="work-history-summary">Internship on industrial automation: programmed Siemens S7 and Kinco
-                    PLCs and HMIs with TIA Portal and KincoBuilder, including ladder logic and simulation.</p>
-                <div class="work-history-stacks" aria-label="Technologies used">
-                    <span class="work-history-stack-tag">Siemens S7</span>
-                    <span class="work-history-stack-tag">TIA Portal</span>
-                    <span class="work-history-stack-tag">KincoBuilder</span>
-                    <span class="work-history-stack-tag">Ladder Logic</span>
-                    <span class="work-history-stack-tag">HMI</span>
-                </div>
-            </div>
-
-            <div class="line-break"></div>
-
-            <div class="card--work-history">
-                <p class="work-history-link">🚧 AI Papers Annotator</p>
-                <p class="work-history-period">12/2021 - 05/2022</p>
-                <p class="work-history-summary">Annotated 300+ AI research papers to build structured NLP knowledge
-                    graphs—entities, methods, and relationships from top venues such as NeurIPS and ICML.</p>
-                <div class="work-history-stacks" aria-label="Technologies used">
-                    <span class="work-history-stack-tag">NLP</span>
-                    <span class="work-history-stack-tag">Knowledge Graphs</span>
-                    <span class="work-history-stack-tag">Research Annotation</span>
-                </div>
-            </div>
-
-            <div class="line-break"></div>
-
-            <div class="card--work-history">
-                <p class="work-history-link">🚧 Backend Software Developer</p>
-                <p class="work-history-period">06/2024 - 09/2024</p>
-                <p class="work-history-summary">Goldis Co. internship: built a Flask post-management prototype with
-                    REST APIs, SQLite, and a responsive HTML/CSS/JavaScript front end.</p>
-                <div class="work-history-stacks" aria-label="Technologies used">
-                    <span class="work-history-stack-tag"><i class="devicon-python-plain colored"></i> Python</span>
-                    <span class="work-history-stack-tag"><i class="devicon-flask-original"></i> Flask</span>
-                    <span class="work-history-stack-tag">SQLite</span>
-                    <span class="work-history-stack-tag"><i class="devicon-html5-plain"></i> HTML</span>
-                    <span class="work-history-stack-tag"><i class="devicon-css3-plain"></i> CSS</span>
-                    <span class="work-history-stack-tag"><i class="devicon-javascript-plain"></i> JavaScript</span>
-                    <span class="work-history-stack-tag"><i class="fab fa-git-alt"></i> Git</span>
-                </div>
-            </div>
-
-            <div class="line-break"></div>
-
-            <div class="card--work-history">
-                <a href="embedded_tarsim_sanat.html" class="work-history-link">🚧 Embedded Software Engineer</a>
-                <p class="work-history-period">11/2024 - 09/2026</p>
-                <p class="work-history-summary">At Tarsim Sanat Hooshmand, develop elevator and IoT products on ARM
-                    MCUs (STM32, FreeRTOS) with supporting React and ASP.NET tooling.</p>
-                <div class="work-history-stacks" aria-label="Technologies used">
-                    <span class="work-history-stack-tag"><i class="fas fa-microchip"></i> STM32</span>
-                    <span class="work-history-stack-tag">FreeRTOS</span>
-                    <span class="work-history-stack-tag">C / C++</span>
-                    <span class="work-history-stack-tag"><i class="devicon-react-original"></i> React</span>
-                    <span class="work-history-stack-tag"><i class="devicon-dot-net-plain"></i> ASP.NET</span>
-                    <span class="work-history-stack-tag"><i class="fab fa-git-alt"></i> Git</span>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="section--page">
-            <h2>Projects & Accomplishments</h2>
-
-            <div class="card--project">
-                <a href="BSc_project.html"><span>🏆 </span>Android application ,PI controller design and identification
-                    of lighting system of smart homes</a>
-            </div>
-
-            <div class="card--project">
-                <a href="MSc_thesis.html"><span>🏆 </span>Robust MIMO secondary frequency modeling and control of Shahid
-                    Rajaei combined cycle power plant using classic and deep learning methods</a>
-            </div>
-        </section>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Mohammadreza Malekjan. Built with modern HTML, CSS & JavaScript.</p>
+      <p class="built-with">Hosted on GitHub Pages</p>
     </div>
-</body>
+  </footer>
 
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mohammadreza Malekjan",
+  "jobTitle": "Control & Machine Learning Engineer",
+  "url": "https://mrmalekjan.github.io/",
+  "email": "malak1377mm@gmail.com",
+  "telephone": "+989197674587",
+  "address": { "@type": "PostalAddress", "addressCountry": "IR" },
+  "knowsAbout": ["control systems", "machine learning", "embedded systems", "PLC", "Python", "MATLAB", "React", "ASP.NET"],
+  "sameAs": [
+    "https://github.com/mrmalekjan",
+    "https://www.linkedin.com/in/mohammadreza-malekjan-5878b1244/",
+    "https://t.me/mohammadrezamalekjan"
+  ]
+}
+  </script>
+
+  <script defer src="./scripts/main.js"></script>
+</body>
 </html>
