@@ -113,11 +113,11 @@
       if (i < BIO_TEXT.length) {
         typingTarget.textContent += BIO_TEXT.charAt(i);
         i++;
-        setTimeout(type, 40);
+        setTimeout(type, 15);
       }
     }
     if (document.visibilityState === 'visible') {
-      setTimeout(type, 600);
+      setTimeout(type, 300);
     } else {
       document.addEventListener(
         'visibilitychange',
