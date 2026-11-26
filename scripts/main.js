@@ -103,7 +103,7 @@
   // Typing effect for the hero lead paragraph
   const typingTarget = document.getElementById('typing-target');
   const BIO_TEXT =
-    'Innovative Control & Machine Learning Engineer experienced in designing robust ' +
+    'Innovative Software Developer & Control Engineer experienced in designing robust ' +
     'control systems, deploying AI/ML models, and building embedded & IoT products ' +
     'across PLC, ARM/STM32 (FreeRTOS), Python, React, and ASP.NET.';
 
