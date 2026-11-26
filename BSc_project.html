@@ -1,128 +1,164 @@
-<!DOCTYPE html>
-<html>
-
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>BSc Project - Smart AC Lamp Dimmer</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./styles/base.css">
-    <link rel="stylesheet" href="./styles/elements.css">
-    <link rel="stylesheet" href="./styles/layout.css">
-    <link rel="stylesheet" href="./styles/components.css">
-    <link rel="stylesheet" href="./styles/header.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="BSc Final Project: Smart AC Lamp Dimmer with Closed-Loop PID Control in IoT Framework by Mohammadreza Malekjan." />
+  <meta name="theme-color" content="#090a0b" />
 
+  <meta property="og:title" content="BSc Project — Smart AC Lamp Dimmer (PID Control)" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mrmalekjan.github.io/BSc_project.html" />
+  <meta property="og:description" content="Smart AC lamp dimmer with closed-loop PID control in an IoT framework — NodeMCU ESP8266, TRIAC dimming, BH1750 sensor, Thinger.io, Android app." />
+  <meta property="og:image" content="https://mrmalekjan.github.io/assets/images/profile_pic.jpg" />
+
+  <link rel="canonical" href="https://mrmalekjan.github.io/BSc_project.html" />
+  <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="./site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+  <link rel="stylesheet" href="./styles/main.css" />
+
+  <title>BSc Project — Smart AC Lamp Dimmer | Mohammadreza Malekjan</title>
 </head>
-
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
 
-    <div id="container--main">
-        <a href="index.html" class="back-link">&#x2190; Go Back</a>
-        <h1>BSc Final Project: Smart AC Lamp Dimmer with Closed-Loop PID Control in IoT Framework</h1>
+  <header class="site-header" id="site-header">
+    <nav class="container nav">
+      <a href="index.html" class="logo" aria-label="Home">MM<span>.</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
 
-        <div class="section--page">
-            <p><strong>University:</strong> Amirkabir University of Technology (Tehran Polytechnic)</p>
-            <p><strong>Field:</strong> Electrical Engineering - Control Systems</p>
-            <p><strong>Supervisor:</strong> Dr. Hajar Atrianfar</p>
-            <p><strong>Completion Date:</strong> September 2021</p>
+  <main id="main-content">
+    <section class="subpage reveal reveal-delay-1">
+      <div class="container page-header">
+        <a href="index.html#projects" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Projects</a>
+        <h1>Smart AC Lamp Dimmer with Closed-Loop PID Control</h1>
+        <p class="lead">Bachelor's Final Project &bull; Amirkabir University of Technology &bull; September 2021</p>
+      </div>
 
-            <h2>Project Overview</h2>
+      <div class="container grid">
+        <div style="max-width: 700px;">
+          <p><strong>University:</strong> Amirkabir University of Technology (Tehran Polytechnic)</p>
+          <p><strong>Field:</strong> Electrical Engineering — Control Systems</p>
+          <p><strong>Supervisor:</strong> Dr. Hajar Atrianfar</p>
+          <p><strong>Completion Date:</strong> September 2021</p>
 
-            <p>My Bachelor's degree project involved designing and implementing a smart AC lamp dimmer with closed-loop
-                PID control operating within an Internet of Things (IoT) framework. The system enables remote wireless
-                control of lamp brightness through internet connectivity or remote control, while maintaining precise
-                light intensity regulation using PID control with Ziegler-Nichols tuning.</p>
+          <h2>Project Overview</h2>
+          <p>My Bachelor's degree project involved designing and implementing a smart AC lamp dimmer with closed-loop PID control operating within an Internet of Things (IoT) framework. The system enables remote wireless control of lamp brightness through internet connectivity or remote control, while maintaining precise light intensity regulation using PID control with Ziegler-Nichols tuning.</p>
 
-            <h2>Key Technical Components</h2>
+          <h2>Key Technical Components</h2>
+          <ul>
+            <li><strong>AC Dimmer Circuit:</strong> Designed using TRIAC with leading-edge dimming technique</li>
+            <li><strong>Zero Cross Detection:</strong> Implemented for precise phase control timing</li>
+            <li><strong>Light Sensing:</strong> BH1750 digital light sensor for accurate lux measurement</li>
+            <li><strong>Microcontroller:</strong> NodeMCU (ESP8266) for processing and Wi-Fi connectivity</li>
+            <li><strong>Control Algorithm:</strong> PID controller with Ziegler-Nichols tuning method</li>
+            <li><strong>IoT Integration:</strong> Thinger.io platform for remote monitoring and control</li>
+            <li><strong>Mobile Application:</strong> Android app for user interface and setpoint adjustment</li>
+          </ul>
 
-            <ul>
-                <li><strong>AC Dimmer Circuit:</strong> Designed using TRIAC with leading-edge dimming technique</li>
-                <li><strong>Zero Cross Detection:</strong> Implemented for precise phase control timing</li>
-                <li><strong>Light Sensing:</strong> BH1750 digital light sensor for accurate lux measurement</li>
-                <li><strong>Microcontroller:</strong> NodeMCU (ESP8266) for processing and Wi-Fi connectivity</li>
-                <li><strong>Control Algorithm:</strong> PID controller with Ziegler-Nichols tuning method</li>
-                <li><strong>IoT Integration:</strong> Thinger.io platform for remote monitoring and control</li>
-                <li><strong>Mobile Application:</strong> Android app for user interface and setpoint adjustment</li>
-            </ul>
+          <h2>Technical Implementation</h2>
 
-            <h2>Technical Implementation</h2>
+          <h3>Hardware Design</h3>
+          <ul>
+            <li>Zero Cross Detector circuit for accurate AC waveform detection</li>
+            <li>TRIAC-based dimming circuit with optoisolator for safety</li>
+            <li>BH1750 light sensor with I2C interface for precise light measurement</li>
+            <li>NodeMCU ESP8266 for processing and Wi-Fi connectivity</li>
+          </ul>
 
-            <h3>Hardware Design</h3>
-            <ul>
-                <li>Zero Cross Detector circuit for accurate AC waveform detection</li>
-                <li>TRIAC-based dimming circuit with optoisolator for safety</li>
-                <li>BH1750 light sensor with I2C interface for precise light measurement</li>
-                <li>NodeMCU ESP8266 for processing and Wi-Fi connectivity</li>
-            </ul>
+          <h3>Control System Design</h3>
+          <ul>
+            <li>System identification using step response analysis</li>
+            <li>First and second-order system approximations with time delay</li>
+            <li>PID controller design using Ziegler-Nichols methods (both step response and frequency response)</li>
+            <li>Manual PID tuning for optimal performance</li>
+            <li>Implementation of anti-windup protection</li>
+          </ul>
 
-            <h3>Control System Design</h3>
-            <ul>
-                <li>System identification using step response analysis</li>
-                <li>First and second-order system approximations with time delay</li>
-                <li>PID controller design using Ziegler-Nichols methods (both step response and frequency response)</li>
-                <li>Manual PID tuning for optimal performance</li>
-                <li>Implementation of anti-windup protection</li>
-            </ul>
+          <h3>Software Development</h3>
+          <ul>
+            <li>Embedded C++ programming for NodeMCU</li>
+            <li>Interrupt-driven zero cross detection</li>
+            <li>Digital PID controller implementation using MATLAB</li>
+            <li>IoT integration with Thinger.io platform</li>
+            <li>Android mobile application for remote control</li>
+          </ul>
 
-            <h3>Software Development</h3>
-            <ul>
-                <li>Embedded C++ programming for NodeMCU</li>
-                <li>Interrupt-driven zero cross detection</li>
-                <li>Digital PID controller implementation using MATLAB</li>
-                <li>IoT integration with Thinger.io platform</li>
-                <li>Android mobile application for remote control</li>
-            </ul>
+          <h2>Key Achievements</h2>
+          <ul>
+            <li>Successfully designed and implemented a closed-loop control system for precise light intensity regulation</li>
+            <li>Achieved stable system response with zero steady-state error and settling time under 2 seconds</li>
+            <li>Implemented effective anti-windup protection to prevent integrator saturation</li>
+            <li>Developed complete IoT integration allowing remote monitoring and control</li>
+            <li>Created a user-friendly Android application for seamless interaction with the system</li>
+            <li>Successfully compared different PID tuning methods and selected optimal parameters</li>
+          </ul>
 
-            <h2>Key Achievements</h2>
+          <h2>Technical Specifications</h2>
+          <ul>
+            <li><strong>Light Measurement Range:</strong> 1–65,535 lux</li>
+            <li><strong>Measurement Accuracy:</strong> 0.11 lux</li>
+            <li><strong>Control Frequency:</strong> 20 Hz sampling rate</li>
+            <li><strong>Communication:</strong> Wi-Fi (HTTP protocol)</li>
+            <li><strong>Dimming Method:</strong> Leading-edge phase control</li>
+            <li><strong>Microcontroller:</strong> NodeMCU ESP8266</li>
+            <li><strong>Sensor Interface:</strong> I2C protocol</li>
+          </ul>
 
-            <ul>
-                <li>Successfully designed and implemented a closed-loop control system for precise light intensity
-                    regulation</li>
-                <li>Achieved stable system response with zero steady-state error and settling time under 2 seconds</li>
-                <li>Implemented effective anti-windup protection to prevent integrator saturation</li>
-                <li>Developed complete IoT integration allowing remote monitoring and control</li>
-                <li>Created a user-friendly Android application for seamless interaction with the system</li>
-                <li>Successfully compared different PID tuning methods and selected optimal parameters</li>
-            </ul>
+          <h2>Skills Demonstrated</h2>
+          <ul>
+            <li>Circuit design and analysis</li>
+            <li>System identification and modeling</li>
+            <li>PID controller design and tuning</li>
+            <li>Embedded systems programming</li>
+            <li>IoT architecture and implementation</li>
+            <li>Mobile application development</li>
+            <li>Hardware-software integration</li>
+            <li>Control system validation and testing</li>
+          </ul>
 
-            <h2>Technical Specifications</h2>
-
-            <ul>
-                <li><strong>Light Measurement Range:</strong> 1-65,535 lux</li>
-                <li><strong>Measurement Accuracy:</strong> 0.11 lux</li>
-                <li><strong>Control Frequency:</strong> 20 Hz sampling rate</li>
-                <li><strong>Communication:</strong> Wi-Fi (HTTP protocol)</li>
-                <li><strong>Dimming Method:</strong> Leading-edge phase control</li>
-                <li><strong>Microcontroller:</strong> NodeMCU ESP8266</li>
-                <li><strong>Sensor Interface:</strong> I2C protocol</li>
-            </ul>
-
-            <h2>Skills Demonstrated</h2>
-
-            <ul>
-                <li>Circuit design and analysis</li>
-                <li>System identification and modeling</li>
-                <li>PID controller design and tuning</li>
-                <li>Embedded systems programming</li>
-                <li>IoT architecture and implementation</li>
-                <li>Mobile application development</li>
-                <li>Hardware-software integration</li>
-                <li>Control system validation and testing</li>
-            </ul>
-
-            <div class="section--page">
-                <h2>Project Documentations</h2>
-                <p>
-                    <a href="./assets/files/final_BSc_project_abs_ind.pdf" target="_blank">
-                        <i class="fas fa-file-pdf"></i> Download Project Abstract (PDF)
-                    </a>
-                </p>
-            </div>
+          <h2>Project Documentation</h2>
+          <p>
+            <a href="./assets/files/final_BSc_project_abs_ind.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              <i class="fas fa-file-pdf"></i> Download Project Abstract (PDF)
+            </a>
+          </p>
         </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Mohammadreza Malekjan. Built with modern HTML, CSS & JavaScript.</p>
     </div>
+  </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <script defer src="./scripts/main.js"></script>
 </body>
-
 </html>
