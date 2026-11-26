@@ -726,9 +726,27 @@ html.light .theme-toggle i:first-child { opacity: 0; }
   font-size: 1.15rem;
   width: 1.3rem;
   text-align: center;
+  flex-shrink: 0;
 }
 
-.contact-method strong { color: var(--color-text); font-weight: 600; }
+.contact-method-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-method-info strong {
+  display: block;
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.contact-method-info span {
+  display: block;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
 
 .contact-form {
   background: var(--color-bg);
