@@ -1,0 +1,17 @@
+﻿{
+  "name": "Mohammadreza Malekjan — Control & ML Engineer",
+  "short_name": "MM Portfolio",
+  "description": "Control & Machine Learning Engineer portfolio — embedded systems, PLC, AI/ML, and web development.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090a0b",
+  "theme_color": "#0ea5e9",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "./assets/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
