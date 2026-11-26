@@ -551,7 +551,17 @@ html.light .theme-toggle i:first-child { opacity: 0; }
   flex-wrap: wrap;
 }
 
-.meta .company { font-weight: 600; color: var(--color-text); }
+.meta .company {
+  font-weight: 600;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color var(--duration);
+}
+
+.meta .company:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
 .meta time { font-variant-numeric: tabular-nums; }
 .meta .dot {
   width: 6px;
